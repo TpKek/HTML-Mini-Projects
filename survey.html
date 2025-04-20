@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey</h1>
+    <p id="description">This is a survey</p>
+    <form id="survey-form" method="post" action="/submit-survey">
+      <label for="name" id="name-label">Give your name</label>
+      <input id="name" type="text" required placeholder="Enter your name">
+      <label for="email" id="email-label">Enter Email</label>
+      <input id="email" type="email" required placeholder="Enter your email">
+      <label for="number" id="number-label">Input a number</label>
+      <input id="number" type="number" min="1" max="10" placeholder="1-10">
+
+      <label for="dropdown">Select an option</label>
+      <select id="dropdown">
+        <option value="good">Good</option>
+        <option value="bad">Bad</option>
+      </select>
+
+      <fieldset>
+        <legend>First time staying here?</legend>
+        <input type="radio" id="yes" name="Radio_select" value="Yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="Radio_select" value="No">
+        <label for="no">No</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>How did you hear about us?</legend>
+        <input type="checkbox" id="word-of-mouth" name="check_box" value="Word of mouth">
+        <label for="word-of-mouth">Word of mouth</label>
+        <input type="checkbox" id="instagram" name="check_box" value="Instagram">
+        <label for="instagram">Instagram</label>
+        <input type="checkbox" id="google-ad" name="check_box" value="Google Ad">
+        <label for="google-ad">Google Ad</label>
+        <input type="checkbox" id="random" name="check_box" value="Random">
+        <label for="random">Random</label>
+      </fieldset>
+
+      <label for="textb">Additional Comments</label>
+      <textarea id="textb" name="Textbox" rows="5" cols="30"></textarea>
+
+      <input type="submit" id="submit" name="submitButton">
+
+    </form>
+  </body>
+
+</html>
